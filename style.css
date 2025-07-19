@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     letter-spacing: 0.3rem;
     color: var(--black-market);
+    font-family: "Rubik", sans-serif;
 }
 
 :root {
@@ -32,6 +35,14 @@ img {
 /* Navbar styling */
 
 .navbar {
+    background: rgba(255, 255, 255, 0.9);
+    height: 7.5rem;
+    border-color: var(--dark-grey);
+    border-width: 0.63rem 0 0.63rem 0;
+    border-style: solid;
+}
+
+.navbar-brand {
     font-weight: 600;
     font-size: 1.4rem;
     color: var(--black-market);
@@ -42,12 +53,62 @@ img {
     font-size: .9rem;
 }
 
-,nav-item {
+.nav-item {
     padding-inline: 1.5rem;
 }
 
-.fa-bowl-food,.active, .nav-link:hover{
+.fa-bowl-food,.active, .nav-link:hover {
 
     color: var(--saffron) !important;
 }
 
+.nav-icons a{
+    font-size: 1.2rem;
+    padding-inline: 0.5rem;
+}
+
+.fa-bag-shopping {
+    font-size: 1.1rem;
+    background: var(--dark-grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        height: calc(100vh - 5.6rem);
+        padding-top: 2rem;
+        margin-top: 5.6rem;
+        z-index: 99;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(60px);
+    }
+
+    .navbar-nav {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .collapse {
+        opacity: 1;
+        pointer-events: a11;
+        transform: translateY(0px);
+    }
+}
