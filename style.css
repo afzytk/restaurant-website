@@ -1,3 +1,8 @@
+* {
+    letter-spacing: 0.3rem;
+    color: var(--black-market);
+}
+
 :root {
     --white: #fff;
     --black-market: #231e41;
@@ -6,3 +11,43 @@
     --light-grey: #f9fafc;
     --dark-grey: #f2f3F5;
 }
+
+/* Basic Styling */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--black-market);
+}
+
+.nav-link {
+    color: var(--black-market);
+    font-size: .9rem;
+}
+
+,nav-item {
+    padding-inline: 1.5rem;
+}
+
+.fa-bowl-food,.active, .nav-link:hover{
+
+    color: var(--saffron) !important;
+}
+
